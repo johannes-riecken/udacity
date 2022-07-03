@@ -20,7 +20,7 @@ jobs:
         mode: 'prune'
         # Optional but recommended.
         # See later section on "Git repo for storage".
-        storage-repo: https://${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/johannes-riecken/java-example-storage.git
+        storage-repo: https://${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/johannes-riecken/udacity-storage.git
         storage-repo-branch: main   # Optional. Defaults to "main"
         storage-repo-branch-coverage: gh-pages  # Optional. Defaults to "gh-pages".
   Coverage:
@@ -42,6 +42,6 @@ jobs:
         sanitizer: 'coverage'
         # Optional but recommended.
         # See later section on "Git repo for storage".
-        storage-repo: https://${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/johannes-riecken/java-example-storage.git
+        storage-repo: https://${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/johannes-riecken/udacity-storage.git
         storage-repo-branch: main   # Optional. Defaults to "main"
         storage-repo-branch-coverage: gh-pages  # Optional. Defaults to "gh-pages".
