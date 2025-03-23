@@ -54,9 +54,7 @@ def huffman_encoding(data: str) -> Tuple[str, Tree]:
     return encoded, t
 
 
-def get_codes(t: Tree, path: str = "", m: Dict[str, str] = None) -> Dict[str, str]:
-    if m is None:
-        m = {}
+def get_codes(t: Tree, path: str = "", m: Dict[str, str] = {}) -> Dict[str, str]:
     if t.left is None or t.right is None:
         assert t.val.obj is not None, 'invariant "obj set at leaves" not held'
         return m | {t.val.obj: path}

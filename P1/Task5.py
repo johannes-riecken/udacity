@@ -32,6 +32,8 @@ class Blockchain:
         self.current_block = block
 
     def peek_prev(self) -> Block:
+        if self.current_block is None:
+            return None
         return self.blocks.get(self.current_block.previous_hash)
 
     def move_prev(self) -> None:
