@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='udacity',
-    version='',
+    version='0.0.1',
     packages=[],
     url='',
     license='',
